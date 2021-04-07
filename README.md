@@ -1,24 +1,37 @@
-# README
+# Ruby on Rails Tutorial - Twitter Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Twitter Clone developed for the [*Ruby on Rails Tutorial*](https://railstutorial.org/)(6th Edition) by Michael Hartl
 
-Things you may want to cover:
+## License
 
-* Ruby version
+All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details
 
-* System dependencies
+## Get Started
 
-* Configuration
+To get up and running, clone the repo and install the required gems:
 
-* Database creation
+```
+$ gem install bundler
+$ bundle config set --local without 'production'
+$ bundle install
+```
 
-* Database initialization
+Next, migrate the database:
 
-* How to run the test suite
+```
+$ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Finally, run tests to verify everything is working correctly:
 
-* Deployment instructions
+```
+$ rails test
+```
 
-* ...
+If the tests pass, run the application on your local server:
+
+```
+$ rails server
+```
